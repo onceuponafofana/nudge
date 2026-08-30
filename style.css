@@ -1,0 +1,46 @@
+/* Same palette as the app, so the site and the product read as one thing. */
+:root{--paper:#FAFAF8;--ink:#0A0A0B;--mute:#6E6B66;--faint:#A8A49D;--rule:#E4E1DA;--fill:#EFEDE7;--ember:#C8873F}
+@media(prefers-color-scheme:dark){:root{--paper:#000;--ink:#EDEBE5;--mute:#8B877F;--faint:#55534E;--rule:#1C1C1F;--fill:#131316}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);
+  font:400 17px/1.65 ui-serif,Georgia,"Times New Roman",serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:0 26px}
+header{padding:64px 0 0}
+.brand{font:600 11px/1 ui-sans-serif,system-ui;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+h1{font-weight:200;font-size:clamp(34px,7vw,54px);line-height:1.08;letter-spacing:-.02em;margin:22px 0 0}
+h2{font-weight:300;font-size:clamp(24px,4.4vw,32px);line-height:1.18;letter-spacing:-.015em;margin:0 0 14px}
+h3{font:600 15px/1.4 ui-sans-serif,system-ui;margin:0 0 6px}
+p{color:var(--mute);margin:14px 0}
+p.lead{color:var(--ink);font-size:clamp(18px,2.4vw,21px)}
+section{padding:54px 0;border-top:1px solid var(--rule)}
+section:first-of-type{border-top:0}
+.eyebrow{font:600 10px/1 ui-sans-serif,system-ui;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:18px}
+.thing{border-top:1px solid var(--rule);padding:18px 0}
+.thing p{font-size:15px;margin:4px 0 0}
+/* Apple's badge, used unaltered as their guidelines require. Fixed height with
+   auto width so it is never stretched, and clear space around it. */
+.badge{display:inline-block;margin-top:26px;line-height:0}
+.badge picture{display:block}
+.badge img{height:54px;width:auto;display:block}
+.cta{display:inline-block;margin-top:26px;padding:15px 26px;border-radius:12px;
+  background:var(--ink);color:var(--paper);text-decoration:none;
+  font:600 12px/1 ui-sans-serif,system-ui;letter-spacing:.16em;text-transform:uppercase}
+.price{border:1px solid var(--rule);border-radius:14px;padding:20px;margin:14px 0}
+.price.hi{border-color:var(--ember)}
+.price .amt{float:right;font:600 14px/1 ui-sans-serif,system-ui;color:var(--ember)}
+.price ul{list-style:none;margin-top:10px}
+.price li{color:var(--mute);font-size:15px;padding:3px 0}
+.price li::before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;
+  background:var(--faint);vertical-align:middle;margin-right:10px}
+details{border-top:1px solid var(--rule);padding:16px 0}
+summary{cursor:pointer;font:600 16px/1.4 ui-sans-serif,system-ui;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--faint);font-weight:400}
+details[open] summary::after{content:"\2212"}
+details p{font-size:15px}
+footer{padding:44px 0 70px;border-top:1px solid var(--rule);color:var(--faint);font-size:13px}
+footer a{color:var(--mute)}
+a{color:var(--ink)}
+small{color:var(--faint);font-size:12.5px;line-height:1.6;display:block;margin-top:10px}
