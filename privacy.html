@@ -13,8 +13,8 @@
 <header>
   <div class="brand"><a href="index.html">Nudge</a></div>
   <h1>Privacy policy</h1>
-  <p class="lead">Nudge does not collect anything. There is no account, no server, and nothing to upload to.</p>
-  <small>Last updated 29 August 2026.</small>
+  <p class="lead">Nudge does not collect anything. There is no account, and your audio and reports never leave your phone.</p>
+  <small>Last updated 18 October 2026.</small>
 </header>
 
 <section>
@@ -25,8 +25,9 @@
 
 <section>
   <h2>What is never transmitted</h2>
-  <p>Nudge operates no servers and has no backend. Audio, reports, sleep data, check-in answers and settings are never sent anywhere. The developer cannot access them and neither can anyone else.</p>
-  <p>Nudge contains no analytics, no advertising, no tracking identifiers and no third party SDKs.</p>
+  <p>Audio, reports, sleep data, check-in answers and settings are never sent anywhere. The developer cannot access them and neither can anyone else. The only thing that leaves your phone is the small partner signal described below, and only if you pair with someone.</p>
+  <p>Nudge contains no advertising and no tracking across apps. To see how the app is used, it sends a few anonymous counts to PostHog: for example that onboarding was finished, a night was started, or an invite was sent. These are tied to a random identifier for your installation, not to you, and never include audio, snoring details, health data or names. You can turn this off in Settings, under Help and privacy.</p>
+  <p>If you choose "Help improve Nudge", it also sends anonymous numbers about each night: how long each snoring stretch lasted, how sure the detector was, when in the night it happened, whether a nudge went out and whether it stopped the snoring, how loud the room was, how long the night was, and your morning answers (how rested you felt and what was different, such as mouth tape or a drink). It never sends audio, names, location or health data. It is off until you turn it on, and you can turn it off at any time.</p>
 </section>
 
 <section>
@@ -42,8 +43,8 @@
 
 <section>
   <h2>If you connect with another person</h2>
-  <p>A future version will let two people link their phones so masking sound can respond to snoring detected on the other device. If you use that feature, the only thing shared is a measure of how much snoring is happening. Recordings are never shared with a linked person, and either person can unlink at any time.</p>
-  <p>This feature does not exist at the time of writing. This policy will be updated before it does.</p>
+  <p>You can pair your phone with one other person's, so Hush on their phone can respond to your snoring. When you are connected, your phone sends theirs short signals: whether snoring is happening, how loud, and that a night has started. Recordings and audio are never sent.</p>
+  <p>These signals pass through a small relay server we run on Cloudflare, only so the two phones can reach each other. It keeps no copy of the signals and does not log them. To send the notice "your partner turned on Hush", the relay stores each paired phone's Apple push notification token, which identifies a device to Apple's notification service and nothing else. Unpairing removes the link, and either person can unpair at any time.</p>
 </section>
 
 <section>
